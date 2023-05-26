@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="mainCalculadora">
+            <h1>Calculadora</h1>
+            
+            <div class="opciones">
+                <input type="radio" value="Suma" id="suma"><label for="suma" class="label">Suma</label>
+                <input type="radio" value="Resta" id="resta"><label for="resta"  class="label">Resta</label> 
+                <input type="radio" value="Multiplicacion" id="multiplicacion"><label for="multiplicacion"  class="label">multiplicacion</label> 
+                <input type="radio" value="Divicion" id="divicion"><label for="divicion"  class="label">Divicion</label>
+            </div>
+            <div class="btnAceptarOpticion">
+                <button onclick="mostrarSigno()">Aceptar</button>
+            </div>
+            <div class="resultadoFinal">
+                <input type="number" id="numberOne"> <span class="operacion">operacion</span> <input type="number" id="numberTwo"> <br>
+               <div>
+                <button class="buttom_calcular" onclick="calculadoraCalcular()">Calcular</button> <button class="buttom_borrar" type="reset"> borrar </button>
+               </div>
+            </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
